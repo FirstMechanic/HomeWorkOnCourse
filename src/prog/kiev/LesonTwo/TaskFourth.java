@@ -7,7 +7,7 @@ public class TaskFourth {
          *сторон больше третьей. Дано: a, b, c – стороны предполагаемого
          *треугольника. Напишите программу которая укажет существует такой
          *треугольник или нет.
-         */
+
 
 
         int a;
@@ -19,6 +19,8 @@ public class TaskFourth {
         } else System.out.println("Lovely triangle!");
 
 
+
+         */
 
 
     }

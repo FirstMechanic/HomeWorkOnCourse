@@ -25,7 +25,7 @@ public class TaskTwoLevelTwo {
         System.out.println("Enter Y coordinate");
         int yD = sc.nextInt();
 
-        if (((xA - xD) * (yB - yA) - (xB - xA) * (yA - yD) >= 0) && ((xB - xD) * (yC - yB) - (xC - xB) * (yB - yD) >= 0) && ((xC - xD) * (yA - yC) - (xA - xC) * (yC - yD)>=0)) {
+        if (((xA - xD) * (yB - yA) - (xB - xA) * (yA - yD) <= 0) && ((xB - xD) * (yC - yB) - (xC - xB) * (yB - yD) <= 0) && ((xC - xD) * (yA - yC) - (xA - xC) * (yC - yD)<=0)) {
             System.out.println("The point belongs to the triangle");
         } else System.out.println("The point does not belong to the triangle");
     }
