@@ -1,4 +1,4 @@
-package com.gmail.dimaliahov;
+package prog.kiev.LesonOne;
 public class TaskTwo {
     public static void main(String[] args) {
         /*

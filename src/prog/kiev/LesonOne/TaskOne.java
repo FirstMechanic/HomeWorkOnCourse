@@ -1,4 +1,4 @@
-package com.gmail.dimaliahov;
+package prog.kiev.LesonOne;
 import java.util.Scanner;
 public class TaskOne {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.gmail.dimaliahov;
+package prog.kiev.LesonOne;
 import java.util.Scanner;
 public class TaskThree {
     public static void main(String[] args) {
