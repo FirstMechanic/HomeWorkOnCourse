@@ -27,6 +27,7 @@ public class TaskTwoLevelTwo {
 
         if (((xA - xD) * (yB - yA) - (xB - xA) * (yA - yD) <= 0) && ((xB - xD) * (yC - yB) - (xC - xB) * (yB - yD) <= 0) && ((xC - xD) * (yA - yC) - (xA - xC) * (yC - yD)<=0)) {
             System.out.println("The point belongs to the triangle");
+            System.out.println("ghogrjnerjng");
         } else System.out.println("The point does not belong to the triangle");
     }
 }
