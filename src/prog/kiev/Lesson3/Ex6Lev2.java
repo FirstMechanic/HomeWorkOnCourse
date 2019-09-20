@@ -18,6 +18,6 @@ public class Ex6Lev2 {
                 System.out.print(i + ", ");
             }
         }
-        //pizdz it s a too hard
+        //it s a too hard
     }
 }
