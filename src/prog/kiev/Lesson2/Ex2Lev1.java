@@ -1,8 +1,8 @@
-package prog.kiev.LesonTwo;
+package prog.kiev.Lesson2;
 
 import java.util.Scanner;
 
-public class TaskTwo {
+public class Ex2Lev1 {
     public static void main(String[] args) {
         /*
          *Есть девятиэтажный дом, в котором 4 подъезда. Номер подъезда
@@ -15,12 +15,11 @@ public class TaskTwo {
         System.out.println("Enter the apartment number: ");
         int numberOfApartment = sc.nextInt();
 
-
         //Убераем неправельные номера
         if (numberOfApartment > 0 && numberOfApartment < 145) {
-            int a = numberOfApartment / 36;
-            int b = (numberOfApartment / 4) % 9;
-            System.out.println("Floor number: " + ++b + ", " + "entrance number: " + ++a + ".");
+            int a = (numberOfApartment - 1) % 36 / 4; //етаж
+            int b = (numberOfApartment - 1) / 36; //вход
+            System.out.println("Floor is " + ++a + ", entrance is " + ++b);
         } else System.out.println("You enter wrong number of apartment. Restart a program.");
     }
 

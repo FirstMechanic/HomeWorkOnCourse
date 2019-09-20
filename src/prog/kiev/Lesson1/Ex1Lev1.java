@@ -1,6 +1,8 @@
-package prog.kiev.LesonOne;
+package prog.kiev.Lesson1;
+
 import java.util.Scanner;
-public class TaskOneONE {
+
+public class Ex1Lev1 {
     public static void main(String[] args) {
         /*
          * Написать програму которая считывает 5-и значное число с

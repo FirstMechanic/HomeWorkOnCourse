@@ -1,8 +1,8 @@
-package prog.kiev.LesonTwo;
+package prog.kiev.Lesson2;
 
 import java.util.Scanner;
 
-public class TaskTwoLevelTwo {
+public class Ex6Lev2 {
     public static void main(String[] args) {
         /*
          *Дан треугольник координаты вершин А(0,0), В(4,4), С(6,1). Пользователь
@@ -18,16 +18,15 @@ public class TaskTwoLevelTwo {
 //Точка С
         int xC = 6;
         int yC = 1;
-//Точка которую вводит пользователь
+//Точка которую вводит пользователь \/
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter X coordinate");
         int xD = sc.nextInt();
         System.out.println("Enter Y coordinate");
         int yD = sc.nextInt();
 
-        if (((xA - xD) * (yB - yA) - (xB - xA) * (yA - yD) <= 0) && ((xB - xD) * (yC - yB) - (xC - xB) * (yB - yD) <= 0) && ((xC - xD) * (yA - yC) - (xA - xC) * (yC - yD)<=0)) {
+        if (((xA - xD) * (yB - yA) - (xB - xA) * (yA - yD) <= 0) && ((xB - xD) * (yC - yB) - (xC - xB) * (yB - yD) <= 0) && ((xC - xD) * (yA - yC) - (xA - xC) * (yC - yD) <= 0)) {
             System.out.println("The point belongs to the triangle");
-            System.out.println("ghogrjnerjng");
         } else System.out.println("The point does not belong to the triangle");
     }
 }

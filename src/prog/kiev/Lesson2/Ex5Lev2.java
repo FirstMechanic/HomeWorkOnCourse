@@ -1,8 +1,8 @@
-package prog.kiev.LesonTwo;
+package prog.kiev.Lesson2;
 
 import java.util.Scanner;
 
-public class TaskOneLevelTwo {
+public class Ex5Lev2 {
     public static void main(String[] args) {
         /*
          *Есть круг с центром в начале координат и радиусом 4. Пользователь
@@ -10,16 +10,18 @@ public class TaskOneLevelTwo {
          *определит лежит ли эта точка внутри круга или нет.
          */
         Scanner sc = new Scanner(System.in);
+
         System.out.println("Enter X coordinate ");
-        int a = sc.nextInt();
+        int coordinateS = sc.nextInt();
+
         System.out.println("Enter Y coordinate ");
-        int b = sc.nextInt();
-        int r = 4;
-        //Только для круга с центром (0;0)
-        if (a * a + b * b <= r * r) {
+        int coordinateY = sc.nextInt();
+        int radius = 4;
+
+        //Работает только для круга с центром (0;0)
+
+        if (coordinateS * coordinateS + coordinateY * coordinateY <= radius * radius) {
             System.out.println("Point lies in a circle");
         } else System.out.println("The point lies outside the circle.");
-
-
     }
 }

@@ -1,8 +1,8 @@
-package prog.kiev.LesonTwo;
+package prog.kiev.Lesson2;
 
 import java.util.Scanner;
 
-public class TaskOnLesson {
+public class ExOnLesson {
     public static void main(String[] args) {
         int a;
         int b;

@@ -1,8 +1,8 @@
-package prog.kiev.LesonTwo;
+package prog.kiev.Lesson2;
 
 import java.util.Scanner;
 
-public class TaskThree {
+public class Ex3Lev1 {
     public static void main(String[] args) {
         /*
          *Определить количество дней в году, который вводит пользователь. В
