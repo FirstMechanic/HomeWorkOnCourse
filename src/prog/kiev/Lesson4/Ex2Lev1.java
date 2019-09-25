@@ -24,5 +24,6 @@ public class Ex2Lev1 {
 
             System.out.print(array[i] + " ");
         }
+        sc.close();
     }
 }
