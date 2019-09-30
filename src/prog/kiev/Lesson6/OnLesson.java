@@ -1,4 +1,4 @@
-package prog.kiev.Lesson5;
+package prog.kiev.Lesson6;
 
 public class OnLesson {
     /**

@@ -1,27 +1,34 @@
 package prog.kiev.Lesson3;
 
+import java.util.Scanner;
+
 public class ExOnLesson {
     public static void main(String[] args) {
+        int a;
+        int b;
+        int c;
+        int max;
 
-        /*
-         * Если число делится на 3 выводится вместо числа " :) "
-         * Если число делится на 5 выводится вместо числа " :( "
-         * Если число делится на 3 и 5 выводится вместо числа " ? "
-         */
-        for (int i = 1; i <= 100; i++) {
+        Scanner sc = new Scanner(System.in);
 
-            if (i % 3 == 0 && i % 5 != 0) {
-                System.out.println(":)");
-            }
-            if (i % 5 == 0 && i % 3 != 0) {
-                System.out.println(":(");
-            }
-            if (i % 3 == 0 && i % 5 == 0) {
-                System.out.println("?");
-            }
-            if (i % 3 != 0 && i % 5 != 0) {
-                System.out.println(i);
-            }
+        System.out.println("Введите число а:");
+        a = sc.nextInt();
+        System.out.println("Введите число b:");
+        b = sc.nextInt();
+        System.out.println("Введите число с:");
+        c = sc.nextInt();
+
+        if (a <= b && b <= c) {
+            max = c;
+            System.out.println(max);
+        } else if (a <= b && b >= c) {
+            max = b;
+            System.out.println(max);
+
+        } else if (a >= b && b >= c) {
+            max = a;
+            System.out.println(max);
         }
     }
 }
+

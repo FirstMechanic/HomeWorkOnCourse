@@ -1,4 +1,4 @@
-package prog.kiev.Lesson4;
+package prog.kiev.Lesson5;
 
 public class SimpleClass3 {
     public static void main(String[] args) {

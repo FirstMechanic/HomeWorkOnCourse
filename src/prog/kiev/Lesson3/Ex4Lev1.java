@@ -1,32 +1,21 @@
 package prog.kiev.Lesson3;
 
-import java.util.Scanner;
-
 public class Ex4Lev1 {
     public static void main(String[] args) {
         /*
-         * Выведите на экран прямоугольник из *. Причем высота и ширина
-         * прямоугольника вводятся с клавиатуры. Например ниже представлен
-         * прямоугольник с высотой 4 и шириной 5.
-         * *****
-         * *   *
-         * *   *
-         * *****
+         *Треугольник существует только тогда, когда сумма любых двух его
+         *сторон больше третьей. Дано: a, b, c – стороны предполагаемого
+         *треугольника. Напишите программу которая укажет существует такой
+         *треугольник или нет.
+        //Закомментировано потому что задачи без чисел. А без инициализации чисел не работает.
+        *
+        int a;
+        int b;
+        int c;
+
+        if ((a + b) > c && (a + c) > b && (c + b) > a) {
+            System.out.println("Such a triangle does not exist.");
+        } else System.out.println("Lovely triangle!");
          */
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the height of the square");
-        int height = sc.nextInt();
-
-        System.out.println("Enter the wight of the square");
-        int wight = sc.nextInt();
-
-        for (int i = 1; i <= height; i++) {
-            for (int j = 1; j <= wight; j++) {
-                if (height == i || wight == j || i == 1 || j == 1) {
-                    System.out.print("*");
-                } else System.out.print(" ");
-            }
-            System.out.println();
-        }
     }
 }

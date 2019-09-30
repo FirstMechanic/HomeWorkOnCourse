@@ -1,33 +1,30 @@
 package prog.kiev.Lesson5;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Ex6Lev2 {
     public static void main(String[] args) {
         /*
-         * Число-палиндром с обеих сторон (справа налево и слева направо)
-         * читается одинаково. Самое большое число-палиндром, полученное
-         * умножением двух двузначных чисел – 9009 = 91 × 99.
-         * Найдите самый большой палиндром, полученный умножением двух
-         * трехзначных чисел. (4 часа)
-         *
-         * Все числа от умножения переводятся в строку, + дополнительно переворачивается и сравнивается с исходной. И просто ищем самое большое.
-         * Сначала делал через масивы и строки. Слииишком много строк кода.
+         * Написать код для зеркального переворота массива (7,2,9,4) -> (4,9,2,7). -
+         * массив может быть произвольной длинны. (При выполнении задания
+         * использовать дополнительный массив нельзя)(1 час)
          */
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] array = new int[n];
 
-        int maxPolindrom = 0;
-        for (int i = 100; i <= 999; i++) {
-            for (int j = i; j <= 999; j++) {
-                int polindrom = i * j;
-                StringBuilder number = new StringBuilder("" + polindrom); //Так как ето строка там не пускает компилятор без строки("")
-                String numberTwo = "" + polindrom;
-                number.reverse();
-                if (numberTwo.equals(number.toString()) && maxPolindrom < polindrom) {
-                    maxPolindrom = polindrom;
-                }
-            }
+        for (int i = 0; i < array.length; i++) {
+            array[i] = (int) (Math.random() * 11);
         }
-        System.out.println("The largest palindrome from multiplying two three-digit numbers is: " + maxPolindrom);
+        System.out.println(Arrays.toString(array));
+
+        for (int i = 0; i < array.length / 2; i++) {
+            int one = array[i];
+            int two = array[array.length - i - 1];
+            array[i] = two;
+            array[array.length - i - 1] = one;
+        }
+        System.out.println(Arrays.toString(array));
     }
 }

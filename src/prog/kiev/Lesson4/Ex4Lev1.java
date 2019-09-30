@@ -5,23 +5,28 @@ import java.util.Scanner;
 public class Ex4Lev1 {
     public static void main(String[] args) {
         /*
-         * Введите строку текста с клавиатуры — реализуйте программу для
-         * возможности подсчета количества символа — 'b' в этой строке, с выводом
-         * результат на экран.
+         * Выведите на экран прямоугольник из *. Причем высота и ширина
+         * прямоугольника вводятся с клавиатуры. Например ниже представлен
+         * прямоугольник с высотой 4 и шириной 5.
+         * *****
+         * *   *
+         * *   *
+         * *****
          */
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter stripe");
-        String str = sc.nextLine();
-        int count = 0;
+        System.out.println("Enter the height of the square");
+        int height = sc.nextInt();
 
-        char[] t = str.toCharArray();
+        System.out.println("Enter the wight of the square");
+        int wight = sc.nextInt();
 
-        for (int i = 0; i < t.length; i++) {
-            if (t[i]=='b') {
-                count+=1;
+        for (int i = 1; i <= height; i++) {
+            for (int j = 1; j <= wight; j++) {
+                if (height == i || wight == j || i == 1 || j == 1) {
+                    System.out.print("*");
+                } else System.out.print(" ");
             }
+            System.out.println();
         }
-        System.out.println(count);
-        sc.close();
     }
 }

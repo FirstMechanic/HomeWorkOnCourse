@@ -5,25 +5,20 @@ import java.util.Scanner;
 public class Ex2Lev1 {
     public static void main(String[] args) {
         /*
-         * Написать код для возможности создания массива целых чисел (размер
-         * вводиться с клавиатуры) и возможности заполнения каждого его элемента
-         * вручную. Выведите этот массив на экран.
+         * Вычислить с помощью цикла факториал числа - n введенного с
+         * клавиатуры (4<n<16). Факториал числа это произведение всех чисел от
+         * этого числа до 1. Например 5!=5*4*3*2*1=120
          */
-        System.out.println("Enter the size of the array: ");
         Scanner sc = new Scanner(System.in);
-        int arr = sc.nextInt();
-        int[] array = new int[arr];
-        System.out.println("You set an array of size " + arr);
-
-        for (int i = 0; i < array.length; i++) {
-            System.out.println("Enter a number for the cell " + i);
-            array [i] = sc.nextInt();
+        System.out.println("Enter a number from the range - 4 < n < 16");
+        int n = sc.nextInt();
+        long max = 1;
+        if (4 < n && n < 16) {
+            for (int i = 1; i <= n; i++) {
+                max *= i;
+            }
         }
-        System.out.print("You created an array: ");
-        for (int i = 0; i < array.length; i++) {
+        System.out.println("Factorial " + n + " is " + max);
 
-            System.out.print(array[i] + " ");
-        }
-        sc.close();
     }
 }

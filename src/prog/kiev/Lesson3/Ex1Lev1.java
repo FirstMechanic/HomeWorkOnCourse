@@ -5,34 +5,28 @@ import java.util.Scanner;
 public class Ex1Lev1 {
     public static void main(String[] args) {
         /*
-         * С помощью циклов нарисовать «обои». Причем количество полос
-         * должно вводиться с клавиатуры. В примере 7 полос.
-         * ***+++***+++***+++***
-         * ***+++***+++***+++***
-         * ***+++***+++***+++***
-         * ***+++***+++***+++***
-         * ***+++***+++***+++***
+         *Написать программу которая считает 4 числа c клавиатуры и выведет на экран самое большое из них.
          */
-
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("You can stick wallpaper, enter the number of stripes: ");
-        int stripes = sc.nextInt();
+        System.out.println("To display the maximum number of 4 given numbers...\n Enter first number: ");
+        int first = sc.nextInt();
 
-        System.out.println("And enter the height of the wallpaper");
-        int heighWallpaper = sc.nextInt();
+        System.out.println("Enter second number: ");
+        int second = sc.nextInt();
 
-        for (int j = 1; j <= heighWallpaper; j++) {
-            for (int i = 1; i <= stripes; i++) {
-                if (i % 2 != 0) {
-                    System.out.print("***");
-                }
-                if (i % 2 == 0) {
-                    System.out.print("+++");
-                }
-            }
-            System.out.println("");
-        }
+        System.out.println("Enter third number: ");
+        int third = sc.nextInt();
+
+        System.out.println("Enter fourth number: ");
+        int fourth = sc.nextInt();
+
+        int max = first;
+
+        if (second > max) max = second;
+        if (third > max) max = third;
+        if (fourth > max) max = fourth;
+
+        System.out.println("The largest of four numbers is " + max);
     }
 }
-

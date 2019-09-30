@@ -1,25 +1,27 @@
 package prog.kiev.Lesson5;
 
-public class Ex4Lev1 {
-    public static int print(String a, int n) {
-        char[] arr = a.toCharArray();
-        int number = 0;
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] == ' ') {
-                number += 1;
-            }
-        }
-        n = number + 1;
-        return n;
-    }
+import java.util.Scanner;
 
+public class Ex4Lev1 {
     public static void main(String[] args) {
         /*
-         * Напишите метод который вернет количество слов в строке текста.
+         * Введите строку текста с клавиатуры — реализуйте программу для
+         * возможности подсчета количества символа — 'b' в этой строке, с выводом
+         * результат на экран.
          */
-        int n = 0;
-        String text = "Напишите метод который вернет количество слов в строке текста.";
-        n = print(text, n);
-        System.out.println(n);
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter stripe");
+        String str = sc.nextLine();
+        int count = 0;
+
+        char[] t = str.toCharArray();
+
+        for (int i = 0; i < t.length; i++) {
+            if (t[i]=='b') {
+                count+=1;
+            }
+        }
+        System.out.println(count);
+        sc.close();
     }
 }

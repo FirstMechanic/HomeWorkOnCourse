@@ -5,20 +5,22 @@ import java.util.Scanner;
 public class Ex2Lev1 {
     public static void main(String[] args) {
         /*
-         * Вычислить с помощью цикла факториал числа - n введенного с
-         * клавиатуры (4<n<16). Факториал числа это произведение всех чисел от
-         * этого числа до 1. Например 5!=5*4*3*2*1=120
+         *Есть девятиэтажный дом, в котором 4 подъезда. Номер подъезда
+         *начинается с единицы. На одном этаже 4 квартиры. Напишите программу
+         *которая получит номер квартиры с клавиатуры, и выведет на экран на
+         *каком этаже, какого подъезда расположенна эта квартира. Если такой
+         *квартиры нет в этом доме то нужно сообщить об этом пользователю
          */
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter a number from the range - 4 < n < 16");
-        int n = sc.nextInt();
-        long max = 1;
-        if (4 < n && n < 16) {
-            for (int i = 1; i <= n; i++) {
-                max *= i;
-            }
-        }
-        System.out.println("Factorial " + n + " is " + max);
+        System.out.println("Enter the apartment number: ");
+        int numberOfApartment = sc.nextInt();
 
+        //Убераем неправельные номера
+        if (numberOfApartment > 0 && numberOfApartment < 145) {
+            int a = (numberOfApartment - 1) % 36 / 4; //етаж
+            int b = (numberOfApartment - 1) / 36; //вход
+            System.out.println("Floor is " + ++a + ", entrance is " + ++b);
+        } else System.out.println("You enter wrong number of apartment. Restart a program.");
     }
+
 }

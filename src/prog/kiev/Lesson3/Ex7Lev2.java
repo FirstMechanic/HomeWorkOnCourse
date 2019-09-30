@@ -1,4 +1,4 @@
-package prog.kiev.Lesson2;
+package prog.kiev.Lesson3;
 
 import java.util.Scanner;
 

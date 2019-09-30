@@ -3,29 +3,27 @@ package prog.kiev.Lesson5;
 import java.util.Scanner;
 
 public class Ex2Lev1 {
-    public static String line(int a, double b, String c) {
-        double w = a + b;
-        String lineOver = c + w;
-        return lineOver;
-    }
-
-
     public static void main(String[] args) {
         /*
-         * Реализуйте метод параметрами которого являются - целое число,
-         * вещественное число и строка. Возвращает он конкатенацию строки с
-         * суммой вещественного и целого числа.
+         * Написать код для возможности создания массива целых чисел (размер
+         * вводиться с клавиатуры) и возможности заполнения каждого его элемента
+         * вручную. Выведите этот массив на экран.
          */
+        System.out.println("Enter the size of the array: ");
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter an integer: ");
-        int a = sc.nextInt();
-        System.out.println("Enter fractional number: ");
-        double b = sc.nextDouble();
-        System.out.println("Enter the string: ");
-        String c = sc.next();
+        int arr = sc.nextInt();
+        int[] array = new int[arr];
+        System.out.println("You set an array of size " + arr);
 
-        System.out.println("You got a string concatenation with the sum of a fractional and an integer " + line(a, b, c));
+        for (int i = 0; i < array.length; i++) {
+            System.out.println("Enter a number for the cell " + i);
+            array [i] = sc.nextInt();
+        }
+        System.out.print("You created an array: ");
+        for (int i = 0; i < array.length; i++) {
 
-
+            System.out.print(array[i] + " ");
+        }
+        sc.close();
     }
 }
