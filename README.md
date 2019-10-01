@@ -274,5 +274,3 @@
       </li>
    </ul>
 </li>
-[_**Dmitriy Liakhov**_](https://www.linkedin.com/in/dmitiy-liakhov-82388a183)
-[dimaliahov@gmail.com](mailto:dimaliahov@gmail.com))
