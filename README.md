@@ -1,5 +1,9 @@
 [![Prog.kiev.ua](logo.png)](https://prog.kiev.ua)
 
+[_**Dmitriy Liakhov**_](https://www.linkedin.com/in/dmitiy-liakhov-82388a183/)
+[dimaliahov@gmail.com](mailto:dimaliahov@gmail.com))
+
+
 <h3>Java Start, Homework</h3>
 
 <ol>
