@@ -118,7 +118,7 @@
          *****<br>
             </a>
         </li>
-        <strong>Hard level</strong>
+<strong>Hard level</strong>
             <li> 4.5<br>
             <a href="/src/A1/prog/kiev/Lesson4/Ex5Lev2.java">
          С помощью цикла (только одного) нарисовать такую фигуру. Причем максимальная высота этой фигуры вводиться с клавиатуры <br>
