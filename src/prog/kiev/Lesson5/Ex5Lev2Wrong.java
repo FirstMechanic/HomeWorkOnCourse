@@ -2,7 +2,7 @@ package prog.kiev.Lesson5;
 
 import java.util.Scanner;
 
-public class Ex5Lev2 {
+public class Ex5Lev2Wrong {
     public static void main(String[] args) {
         /*
          * «Перевернуть массив». Т.е. написать программу которая повернет

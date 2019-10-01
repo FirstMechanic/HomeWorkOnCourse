@@ -36,13 +36,18 @@ public class Ex5Lev2 {
                 k = Integer.parseInt(arr[6]);
             }
             int value = 0;
-            if (b - a == b && c - b == b && d - c == b && e - d == b && g - e == b || k - g == b) {
-                value = k + b;
-                System.out.println("You entered the sequence: " + a + "," + b + "," + c + "," + d + "," + e + "," + g + "," + k + " next number " + value);
+                         if (b - a == b && c - b == b && d - c == b && e - d == b || g - e == b || k - g == b) {
+                            value = k + b;
+                            System.out.println("You entered the sequence: " + a + "," + b + "," + c + "," + d + "," + e + "," + g + "," + k + " next number " + value);
             } else if (b - a == c - b && d - c == c - b) {
-                value = e + (b - a);
-                System.out.println("You entered the sequence: " + a + "," + b + "," + c + "," + d + "," + e + "," + " next number " + value);
+                         value = e + (b - a);
+                          System.out.println("You entered the sequence: " + a + "," + b + "," + c + "," + d + "," + e + "," + " next number " + value);
             } else if (b * 2 == c && c * 2 == d) {
+                if(e == 0){
+                    //e==d*2;
+                System.out.println("You entered the sequence: " + a + "," + b + "," + c + "," + d + "," + e + "," + g + " next number " + value);
+
+                }
                 value = g * 2;
                 System.out.println("You entered the sequence: " + a + "," + b + "," + c + "," + d + "," + e + "," + g + " next number " + value);
             } else if (b * b == c && c * b == d) {
