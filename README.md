@@ -62,7 +62,7 @@
          треугольник или нет.<br>
             </a>
         </li>
-        <li><strong>Hard level</strong>
+        <strong>Hard level</strong>
             <li> 3.5<br>
             <a href="/src/A1/prog/kiev/Lesson3/Ex5Lev2.java">
          Есть круг с центром в начале координат и радиусом 4. Пользователь<br>
